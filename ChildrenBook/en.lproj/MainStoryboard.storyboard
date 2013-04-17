@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="F1g-DA-MzS">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="G6p-a0-bhT">
+            <objects>
+                <viewController id="F1g-DA-MzS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gvw-s0-yzl">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="6.jpg" id="Hvg-BK-oJg">
+                                <rect key="frame" x="0.0" y="0.0" width="780" height="1004"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6bX-xJ-Hqb">
+                                <rect key="frame" x="280" y="627" width="209" height="68"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <state key="normal" title="READ">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2" kind="modal" modalTransitionStyle="crossDissolve" id="dbK-JO-oQ2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4l6-9K-hUl">
+                                <rect key="frame" x="280" y="743" width="220" height="68"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <state key="normal" title="CREDITS">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dRg-Wi-hMf" kind="modal" modalTransitionStyle="crossDissolve" id="bdI-jN-w7h"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="SNOW WHITE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x0r-lz-F8u">
+                                <rect key="frame" x="218" y="498" width="344" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="50"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="d2f-yl-5bh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6yZ-bD-NRA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1116" y="-304"/>
+        </scene>
+        <!--Credit View Controller-->
+        <scene sceneID="D5F-s3-UJN">
+            <objects>
+                <tableViewController id="dRg-Wi-hMf" customClass="CreditViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="135" sectionHeaderHeight="22" sectionFooterHeight="22" id="Z3d-pZ-fsm">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <toolbar key="tableFooterView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Um7-9c-Cr5">
+                            <rect key="frame" x="0.0" y="157" width="768" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <items>
+                                <barButtonItem title="Main Menu" id="dcW-rM-vqq">
+                                    <connections>
+                                        <segue destination="F1g-DA-MzS" kind="modal" id="BB6-ta-XGm"/>
+                                    </connections>
+                                </barButtonItem>
+                            </items>
+                        </toolbar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="creditCell" textLabel="Ejl-J1-LrV" detailTextLabel="DFz-qA-eOC" rowHeight="135" style="IBUITableViewCellStyleSubtitle" id="078-Pa-dQf">
+                                <rect key="frame" x="0.0" y="22" width="768" height="135"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="134"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Credits" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ejl-J1-LrV">
+                                            <rect key="frame" x="10" y="38" width="104" height="36"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DFz-qA-eOC">
+                                            <rect key="frame" x="10" y="74" width="44" height="22"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dRg-Wi-hMf" id="JY9-K0-ytl"/>
+                            <outlet property="delegate" destination="dRg-Wi-hMf" id="Z6k-Sb-VgH"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y4J-YM-rYw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1113" y="897"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="4">
+            <objects>
+                <viewController id="2" customClass="RootViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="16">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UUi-Mk-92f">
+                                <rect key="frame" x="14" y="3" width="117" height="31"/>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" title="Main Menu">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="F1g-DA-MzS" kind="modal" modalTransitionStyle="crossDissolve" id="aAU-wU-1PY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jmp-2Z-JtZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13" y="-243"/>
+        </scene>
+        <!--Data View Controller-->
+        <scene sceneID="7">
+            <objects>
+                <viewController storyboardIdentifier="DataViewController1" id="5" customClass="DataViewController" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="12">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="14">
+                                <rect key="frame" x="20" y="20" width="728" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="13">
+                                <rect key="frame" x="51" y="71" width="667" height="892"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="0.jpg" id="i6s-fh-8uJ">
+                                        <rect key="frame" x="474" y="355" width="165" height="232"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" id="M9N-LB-g6G">
+                                        <rect key="frame" x="5" y="20" width="657" height="330"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <string key="text">One winter's day, when the snow was falling, a beautiful queen sat sewing by a window. As she looked out on to the white garden she saw a black raven, and while she looked at it she accidentally pricked her finger with the needle. When she saw the drop of blood she thought to herself, "How wonderful it would be if I could have a little girl whose skin was as white as the snow out there, her hair as black as the raven and her lips as red as this drop of blood."</string>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" id="ula-Ma-zIG">
+                                        <rect key="frame" x="29" y="368" width="384" height="206"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <string key="text">Not long afterwards the queen had a baby daughter, and when she saw her jet black hair, snowy white skin and red red lips she remembered her wish and called her Snow White.</string>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" id="qdf-W5-xFn">
+                                        <rect key="frame" x="16" y="590" width="635" height="297"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.4349947347" blue="0.3411621487" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                        <string key="text">Snow White grew up to be a pretty child, but sadly, after a few years, her mother died and her father married again. The new queen, Snow White's stepmother, was a beautiful woman too, but she was very vain. More than anything else she wanted to be certain that she was the most beautiful woman in the world. She had a magic mirror, and she used to look at herself in it each clay and say:</string>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tap Me!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7eG-ia-Zig">
+                                        <rect key="frame" x="455" y="368" width="79" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nfZ-nB-ReI">
+                                <rect key="frame" x="540" y="7" width="46" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="text1Button:" destination="5" eventType="touchUpInside" id="UiQ-r6-nQs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hOj-7F-cRY">
+                                <rect key="frame" x="600" y="7" width="46" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.03529411927" green="0.93725496529999996" blue="0.43529415129999999" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="text2Button:" destination="5" eventType="touchUpInside" id="W3D-Hq-mJl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="njz-sY-vcr">
+                                <rect key="frame" x="660" y="7" width="46" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.4349947347" blue="0.3411621487" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="text3Button:" destination="5" eventType="touchUpInside" id="OUR-dS-qwb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97826086960000003" green="0.91848131079999995" blue="0.73914263440000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    </view>
+                    <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="dataLabel" destination="14" id="15"/>
+                        <outlet property="imageToTap" destination="i6s-fh-8uJ" id="Yah-ea-afg"/>
+                        <outlet property="text1" destination="M9N-LB-g6G" id="WAa-wE-AXV"/>
+                        <outlet property="text2" destination="ula-Ma-zIG" id="xYc-iX-8JH"/>
+                        <outlet property="text3" destination="qdf-W5-xFn" id="pKE-Gp-iQT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1017" y="-249"/>
+        </scene>
+        <!--Data View Controller-->
+        <scene sceneID="Bsm-86-Im7">
+            <objects>
+                <viewController storyboardIdentifier="DataViewController2" id="Ted-YJ-wbg" customClass="DataViewController" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Bxi-62-eb8">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="6fa-dM-rl3">
+                                <rect key="frame" x="20" y="20" width="728" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="Mp0-Tc-JOw">
+                                <rect key="frame" x="51" y="71" width="667" height="892"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" id="BQs-LR-cZ0">
+                                        <rect key="frame" x="20" y="20" width="627" height="199"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <string key="text">"Mirror, mirror on the wall, Who is the fairest one of all?" and the mirror would always reply, "You, oh Queen, are the fairest one of all."
+ The queen would smile when she heard this for she knew the mirror never failed to speak the truth.</string>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="1.jpg" id="ih8-Zu-wOR">
+                                        <rect key="frame" x="20" y="248" width="253" height="232"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" id="QLF-ZM-FEm">
+                                        <rect key="frame" x="281" y="227" width="366" height="274"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <string key="text">The years passed. Each year Snow White grew prettier and prettier, until one day, her stepmother looked in the magic mirror and said, "Mirror, mirror on the wall, Who is the fairest one of all?" and the mirror replied, "You, oh Queen, are fair, 'tis true, But Snow White is fairer now than you."
+
+</string>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" id="su9-hq-kSd">
+                                        <rect key="frame" x="5" y="510" width="657" height="377"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                                        <string key="text">The queen was angry and jealous. In a terrible rage she decided that Snow White should be killed.
+ She called for a hunter and told him to take Snow White far into the forest and to kill her there. In order to prove that Snow White was indeed dead, she commanded him to cut out Snow White's heart and bring it back to her. The hunter was very sad. Like everyone in the king's household he loved Snow White, but he knew he must obey his orders. He took her deep into the forest and, as he drew his knife, Snow White fell to her knees.
+ "Please spare my life," she begged. "Leave me here. I'll never return to the palace, I promise." The hunter agreed gladly. He was sure the queen would never know he had disobeyed her. He killed a young deer and cut out its heart and took this to the queen, pretending it was Snow White's heart.</string>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="C5k-IQ-o8d">
+                                <rect key="frame" x="540" y="7" width="46" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.03529411927" green="0.93725496529999996" blue="0.43529415129999999" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="text4Button:" destination="Ted-YJ-wbg" eventType="touchUpInside" id="lMj-uG-qJ4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZKj-EK-oIV">
+                                <rect key="frame" x="600" y="7" width="46" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="text5Button:" destination="Ted-YJ-wbg" eventType="touchUpInside" id="EUA-JM-uPg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="87L-fJ-Qez">
+                                <rect key="frame" x="660" y="7" width="46" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="text6Button:" destination="Ted-YJ-wbg" eventType="touchUpInside" id="h3z-i6-ZrV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97826086960000003" green="0.91848131079999995" blue="0.73914263440000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    </view>
+                    <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="dataLabel" destination="6fa-dM-rl3" id="9RT-Tm-veg"/>
+                        <outlet property="text4" destination="BQs-LR-cZ0" id="83V-u6-Lz3"/>
+                        <outlet property="text5" destination="QLF-ZM-FEm" id="epN-0y-2hw"/>
+                        <outlet property="text6" destination="su9-hq-kSd" id="xQB-Bs-7Ba"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0C6-MH-xbA" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1819" y="-249"/>
+        </scene>
+        <!--Data View Controller-->
+        <scene sceneID="FDK-1O-Df1">
+            <objects>
+                <viewController storyboardIdentifier="DataViewController4" id="qgc-2B-A5E" customClass="DataViewController" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Rc9-mj-f0P">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="e37-zE-0oJ">
+                                <rect key="frame" x="20" y="20" width="728" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="7Yf-qu-qOi">
+                                <rect key="frame" x="51" y="71" width="667" height="892"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" id="noc-hK-XDQ">
+                                        <rect key="frame" x="14" y="20" width="638" height="852"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <string key="text">The next morning Snow White awoke and met the dwarfs, and she told them her story. When she explained how she now had no home, the dwarfs immediately asked her whether she would like to stay with them.
+ "With all my heart, I'd love to do that," Snow White replied, happy that she now had a home, and she hoped she could be of help to these kind little people.
+ The dwarfs suspected that Snow White's stepmother, the wicked queen, had magic powers and they were worried that she would find out that Snow White had not been killed by the hunter. They warned Snow White that when she was alone all day she should be wary of strangers who might come to the cottage.
+ Back at the palace the queen welcomed the hunter when he returned with the deer's heart. She was happy that now she was once more the most beautiful woman in the world. As soon as she was alone, she looked in her magic mirror and said, confidently, "Mirror, mirror on the wall, Who is the fairest one of all?" To her horror, the mirror replied, "You, oh Queen, are fair, 'tis true, But Snow White is fairer still than you."
+ The queen trembled with anger as she realized that the hunter had tricked her. She decided that she would now find Snow White and kill her herself.
+ The queen disguised herself as an old pedlar woman with a tray of ribbons and pretty things to sell and she set out into the forest. When she came to the dwarfs' cottage in the clearing, she knocked and smiled a wicked smile when she saw Snow White come to the door.
+ "Why, pretty maid," she said pleasantly, "won't you buy some of the wares I have to sell? Would you like some ribbons or buttons, some buckles, a new lacing for your dress perhaps?"</string>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="jou-t2-WOK">
+                                        <rect key="frame" x="-15" y="0.0" width="697" height="892"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="MpS-qp-Tzx">
+                                <rect key="frame" x="660" y="7" width="46" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="text9Button:" destination="qgc-2B-A5E" eventType="touchUpInside" id="5Uz-Mu-veD"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tap to reveal the words!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="n4x-MZ-cLf">
+                                <rect key="frame" x="216" y="971" width="336" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97826086960000003" green="0.91848131079999995" blue="0.73914263440000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="iWr-Wg-JOM" appends="YES" id="UuO-Ma-nE9"/>
+                        </connections>
+                    </view>
+                    <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="dataLabel" destination="e37-zE-0oJ" id="jYD-gQ-Sl1"/>
+                        <outlet property="imageToChange" destination="jou-t2-WOK" id="WpO-da-C9d"/>
+                        <outlet property="text9" destination="noc-hK-XDQ" id="mw7-Ma-4Bg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E0T-gB-5gR" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="iWr-Wg-JOM">
+                    <connections>
+                        <action selector="tapPage4:" destination="qgc-2B-A5E" id="CJD-Bl-mDo"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="993" y="943"/>
+        </scene>
+        <!--Data View Controller-->
+        <scene sceneID="IFq-Tn-abf">
+            <objects>
+                <viewController storyboardIdentifier="DataViewController6" id="KZ4-L9-gvE" customClass="DataViewController" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="bfn-Pu-oX2">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="9FI-E1-kcg">
+                                <rect key="frame" x="20" y="20" width="728" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="ret-Zs-fkf">
+                                <rect key="frame" x="51" y="71" width="667" height="892"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" id="jY0-1G-NBc">
+                                        <rect key="frame" x="15" y="11" width="636" height="300"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.97826086960000003" green="0.39538414588024162" blue="0.49556961917413478" alpha="1" colorSpace="calibratedRGB"/>
+                                        <string key="text">When she knocked at the cottage door, the queen was quick to explain she had not come to sell anything. She guessed that Snow White would have been warned not to buy from anybody who came by. She simply chatted to Snow White and when Snow White became more at ease she offered her an apple as a present. Snow White was tempted, but she refused, saying she had been told not to accept anything from strangers.
+ "Let me show you how harmless it is," said the disguised queen. "I will take a bite, and if I come to no harm, you will see it is safe for you too."</string>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" image="5.jpg" id="wnf-Di-au0">
+                                        <rect key="frame" x="15" y="319" width="636" height="523"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" id="q19-ie-SbA">
+                                        <rect key="frame" x="15" y="319" width="636" height="523"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <string key="text">She knew the yellow side was not poisoned and took a bite from there. Thinking it harmless, Snow White stretched out her hand for the apple and also took a bite, but from the rosy-red side.
+ At once Snow White was affected by the poison and fell down as though dead. That evening when the dwarfs returned they were quite unable to revive her. They turned her over to see if her dress had been laced too tightly. But they could find nothing different about her. They watched over her through the night, but when morning came she still lay without any sign of life, and they decided she must be dead. Weeping bitterly, they laid herein a coffin and placed a glass lid over the top so that all could admire her beauty, even though she was dead. Then they carried the coffin to the top of a hill where they took turns to stand guard.
+ The queen was delighted that day when she looked in her mirror and asked, "Mirror, mirror on the wall, Who is the fairest one of all?" and the mirror replied, "You, oh Queen, are the fairest one of all."
+
+</string>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Want to know the end? Drag this apple to the top-left." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="u56-IC-nHa">
+                                        <rect key="frame" x="97" y="860" width="473" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" id="dVk-Ur-8Vc">
+                                        <rect key="frame" x="189" y="11" width="462" height="789"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" image="9.jpg" id="hh5-yL-HCw">
+                                                <rect key="frame" x="12" y="499" width="438" height="180"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" id="pte-D8-kXd">
+                                                <rect key="frame" x="7" y="9" width="455" height="678"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <string key="text">How cruelly she laughed when she heard those words. Not long after this a prince came riding through the forest and came to the hill where Snow White lay in her glass-topped coffin. She looked so beautiful that he loved her at once and he asked the dwarfs if he might have the coffin and take it to his castle. The dwarfs would not allow him to do this, but they did let the prince kiss her.
+ As the prince kissed Snow White gently, he moved her head. The piece of poisoned apple fell from her lips. She stirred and then she stretched a little. Slowly she came back to life. Snow White saw the handsome prince kneeling on the ground beside her, and fell in love with him straight away.
+ Then the queen far away in the palace heard from the mirror, "You, oh Queen, are fair, 'tis true, But Snow White is fairer still than you."
+ She was furious that Snow White had escaped death once more. And now the king discovered what mischief she had been up to, and banished her from his land. No one ever saw her or her mirror again.
+ As for Snow White, she said farewell to her kind friends, the dwarfs, and rode away on the back of the prince's horse. At his castle they were married and they both lived happily forever afterwards.</string>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="The End" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="atj-kJ-lJ3">
+                                                <rect key="frame" x="127" y="685" width="209" height="96"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="60"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.03529411927" green="0.93725496529999996" blue="0.43529415129999999" alpha="1" colorSpace="deviceRGB"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="8.jpeg" id="5E4-cX-cGh">
+                                        <rect key="frame" x="584" y="808" width="83" height="84"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <gestureRecognizers/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dAP-9e-tKI">
+                                <rect key="frame" x="600" y="7" width="46" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="text14Button:" destination="KZ4-L9-gvE" eventType="touchUpInside" id="U7f-3W-WJ5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ar9-Q5-Ixe">
+                                <rect key="frame" x="660" y="7" width="46" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.03529411927" green="0.93725496529999996" blue="0.43529415129999999" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="text15Button:" destination="KZ4-L9-gvE" eventType="touchUpInside" id="tQx-Od-022"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sY9-pL-sGc">
+                                <rect key="frame" x="540" y="7" width="46" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97826086960000003" green="0.39538414589999998" blue="0.49556961919999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="text13Button:" destination="KZ4-L9-gvE" eventType="touchUpInside" id="pqx-fD-Hzd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97826086960000003" green="0.91848131079999995" blue="0.73914263440000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    </view>
+                    <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="appleToDrag" destination="5E4-cX-cGh" id="KJe-Uz-mJE"/>
+                        <outlet property="dataLabel" destination="9FI-E1-kcg" id="LIw-Df-pG7"/>
+                        <outlet property="endView" destination="dVk-Ur-8Vc" id="9DL-y2-hX0"/>
+                        <outlet property="infoLabel" destination="u56-IC-nHa" id="See-d5-wPB"/>
+                        <outlet property="text13" destination="jY0-1G-NBc" id="ScP-bR-IbO"/>
+                        <outlet property="text14" destination="q19-ie-SbA" id="drb-Mv-80y"/>
+                        <outlet property="text15" destination="pte-D8-kXd" id="mhQ-Gc-UAi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ho7-jz-m6I" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1814" y="943"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="0.jpg" width="273" height="365"/>
+        <image name="1.jpg" width="989" height="758"/>
+        <image name="5.jpg" width="524" height="328"/>
+        <image name="6.jpg" width="709" height="1002"/>
+        <image name="8.jpeg" width="225" height="224"/>
+        <image name="9.jpg" width="580" height="254"/>
+    </resources>
+    <classes>
+        <class className="CreditViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CreditViewController.h"/>
+        </class>
+        <class className="DataViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DataViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="tapPage4:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="action" name="text10Button:" candidateClass="UIButton"/>
+                <relationship kind="action" name="text11Button:" candidateClass="UIButton"/>
+                <relationship kind="action" name="text12Button:" candidateClass="UIButton"/>
+                <relationship kind="action" name="text13Button:" candidateClass="UIButton"/>
+                <relationship kind="action" name="text14Button:" candidateClass="UIButton"/>
+                <relationship kind="action" name="text15Button:" candidateClass="UIButton"/>
+                <relationship kind="action" name="text1Button:" candidateClass="UIButton"/>
+                <relationship kind="action" name="text2Button:" candidateClass="UIButton"/>
+                <relationship kind="action" name="text3Button:" candidateClass="UIButton"/>
+                <relationship kind="action" name="text4Button:" candidateClass="UIButton"/>
+                <relationship kind="action" name="text5Button:" candidateClass="UIButton"/>
+                <relationship kind="action" name="text6Button:" candidateClass="UIButton"/>
+                <relationship kind="action" name="text7Button:" candidateClass="UIButton"/>
+                <relationship kind="action" name="text8Button:" candidateClass="UIButton"/>
+                <relationship kind="action" name="text9Button:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="appleToDrag" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="dataLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="endView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="imageToChange" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="imageToTap" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="infoLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="text1" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="text10" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="text11" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="text12" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="text13" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="text14" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="text15" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="text2" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="text3" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="text4" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="text5" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="text6" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="text7" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="text8" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="text9" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="RootViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RootViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="BB6-ta-XGm"/>
+    </inferredMetricsTieBreakers>
+</document>
