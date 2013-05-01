@@ -84,12 +84,16 @@
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
 {
+
     
     NSUInteger index = [self indexOfViewController:(DataViewController *)viewController];
+    
+    
     if ((index == 0) || (index == NSNotFound)) {
         return nil;
     }
-        
+    
+    [(DataViewController *)viewController setBackgroundMusic:nil];
     
     index--;
     NSUserDefaults  *defaults=[NSUserDefaults standardUserDefaults];
@@ -103,6 +107,8 @@
     if (index == NSNotFound) {
         return nil;
     }
+    
+    [(DataViewController *)viewController setBackgroundMusic:nil];
     
     index++;
     if (index == [self.pageData count]) {

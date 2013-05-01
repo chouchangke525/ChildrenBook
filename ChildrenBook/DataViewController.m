@@ -200,15 +200,15 @@
 -(void)tapImage:(UITapGestureRecognizer *)gestureRecognizer
 {
     NSLog(@"You tapped me, %@",gestureRecognizer);
-    NSError *error;
-    NSString *backgroundMusicPath = [[NSBundle mainBundle]
-                                     pathForResource:@"music" ofType:@"mp3"];
-    NSURL *backgroundMusicURL = [NSURL
-                                 fileURLWithPath:backgroundMusicPath];
-    backgroundMusic = [[AVAudioPlayer alloc]
-                       initWithContentsOfURL:backgroundMusicURL error:&error];
-    [backgroundMusic prepareToPlay];
-    [backgroundMusic play];
+//    NSError *error;
+//    NSString *backgroundMusicPath = [[NSBundle mainBundle]
+//                                     pathForResource:@"music" ofType:@"mp3"];
+//    NSURL *backgroundMusicURL = [NSURL
+//                                 fileURLWithPath:backgroundMusicPath];
+//    backgroundMusic = [[AVAudioPlayer alloc]
+//                       initWithContentsOfURL:backgroundMusicURL error:&error];
+//    [backgroundMusic prepareToPlay];
+//    [backgroundMusic play];
     
 }
 
